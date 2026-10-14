@@ -45,8 +45,8 @@ CHANNEL_DEFAULTS = pd.DataFrame([
      "Acquisition ₹/booking": 0.0, "Daily campaign cost ₹": 0.0, "Max extra bookings/day": 3},
 ])
 
-OTA_BOOKINGS_MODEL = BASE_DIR / "demandsense_ota_bookings_model.joblib"
-OTA_CANCEL_MODEL = BASE_DIR / "demandsense_ota_cancellation_model.joblib"
+OTA_BOOKINGS_MODEL = BASE_DIR / "models" / "demandsense_ota_bookings_model.joblib"
+OTA_CANCEL_MODEL = BASE_DIR / "models" / "demandsense_ota_cancellation_model.joblib"
 
 def predict_ota_outcomes(date, occ_pct, room_rate, channel_row):
     booking_model = joblib.load(OTA_BOOKINGS_MODEL)
