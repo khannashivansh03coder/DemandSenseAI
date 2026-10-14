@@ -1,0 +1,34 @@
+{
+  "data_type": "SYNTHETIC DEMONSTRATION ONLY",
+  "rows": 8286,
+  "dates": 1381,
+  "channels": [
+    "Direct Website",
+    "MakeMyTrip",
+    "Goibibo",
+    "Booking.com",
+    "Agoda",
+    "Expedia"
+  ],
+  "train_start": "2023-01-01",
+  "train_end": "2026-01-08",
+  "test_start": "2026-01-09",
+  "test_end": "2026-10-12",
+  "booking_model": {
+    "mae_bookings_per_channel_day": 1.819206224782151,
+    "rmse_bookings_per_channel_day": 2.484829520160819,
+    "baseline_channel_mean_mae": 3.573843173930484,
+    "baseline_channel_mean_rmse": 5.0710810078907285,
+    "beats_baseline_mae": true
+  },
+  "cancellation_classifier": {
+    "accuracy": 0.8370273794002607,
+    "brier_score": 0.12131111745703041,
+    "roc_auc": 0.7323646070424421
+  },
+  "limitations": [
+    "All OTA records and response patterns are synthetic assumptions.",
+    "Metrics validate performance only against the synthetic generator, not real OTA behavior.",
+    "Replace with anonymised hotel/channel booking records before making real business claims."
+  ]
+}
